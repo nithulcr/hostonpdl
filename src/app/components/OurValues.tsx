@@ -93,7 +93,7 @@ const Services = () => {
 
     return (
         <section ref={containerRef} id="services" className="section overflow-hidden py-14 lg:py-28">
-            <div className="max-w-[1360px] mx-auto px-6">
+            <div className="max-w-[1400px] mx-auto px-6">
 
 
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1  w-full">

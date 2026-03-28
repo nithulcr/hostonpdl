@@ -84,7 +84,7 @@ export default function Header() {
         >
             {/* {pathname === "/" && (
                 <div className="w-full bg-[var(--foreground)] hidden min-[990px]:block">
-                    <div className="text-white grid grid-cols-2 items-center text-sm max-w-[1360px] mx-auto">
+                    <div className="text-white grid grid-cols-2 items-center text-sm max-w-[1400px] mx-auto">
                         <div className="h-full">
                             <div className="h-full max-w-[660px] flex items-center space-x-6 top-header-left relative ml-auto px-6 py-2">
                                 <p className="font-light">Are You Ready to Become an Affiliate Partner?</p>
@@ -162,7 +162,7 @@ export default function Header() {
                     (pathname === "/" ? "" : "")
                 }
             >
-                <div className="max-w-[1360px]  mx-auto flex items-center justify-between md:px-6 px-3 h-[80px] main-header z-10 relative">
+                <div className="max-w-[1400px]  mx-auto flex items-center justify-between md:px-6 px-3 h-[80px] main-header z-10 relative">
                     <div className="h-full align-content-center flex">
                         <Link href="/" className="items-center flex">
                            

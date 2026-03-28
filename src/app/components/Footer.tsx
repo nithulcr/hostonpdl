@@ -5,7 +5,7 @@ import AnimatedButton from "./AnimatedButton";
 export default function Footer() {
   return (
     <footer className="bg-[#121212]  text-white font-normal">
-      <div className="max-w-[1360px] mx-auto py-14 lg:py-24  px-6">
+      <div className="max-w-[1400px] mx-auto py-14 lg:py-24  px-6">
         <div className="bg-[#263238] p-6 md:p-12 flex flex-col gap-4 md:flex-row justify-between md:items-center  mx-auto mb-10 md:mb-14">
           <div>
 
@@ -197,7 +197,7 @@ export default function Footer() {
 
 
       </div>
-      <div className='max-w-[1360px] mx-auto px-4 md:px-6'>
+      <div className='max-w-[1400px] mx-auto px-4 md:px-6'>
       <div className="border-t border-dashed border-gray-300  flex justify-between flex-wrap py-8 gap-3">
         <div className="text-xs md:text-sm">Host on PDL - Copyright 2026. All rights reserved.</div>
         <div className=" text-xs md:text-sm flex items-center gap-3">

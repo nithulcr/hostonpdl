@@ -60,7 +60,7 @@ const BlogsMain = () => {
 
   return (
     <section className="py-14 lg:py-24  bg-[var(--background)] overflow-hidden">
-      <div className="max-w-[1360px] mx-auto px-6 ">
+      <div className="max-w-[1400px] mx-auto px-6 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ const BlogsMain = () => {
             {data.map((choose, index) => (
               <SwiperSlide key={`${choose.title}-${index}`}>
                 <div
-                  className="group bg-[#ffffff91]  grid lg:grid-cols-2 gap-2 rounded-lg p-3 md:p-4 relative h-full min-h-[240px] lg:min-h-[330px]  relative overflow-hidden"
+                  className="group bg-[#ffffffc4]  grid lg:grid-cols-2 gap-2 rounded-lg p-3 md:p-4 relative h-full min-h-[240px] lg:min-h-[330px]  relative overflow-hidden"
                 >
 
                   <div className="relative min-h-[150px]">

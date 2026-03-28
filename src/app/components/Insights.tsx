@@ -31,7 +31,7 @@ export default function ThreeStepProcess() {
     useStaggeredFadeUp(fadeRef as React.RefObject<HTMLElement>);
     return (
         <section className=" bg-[var(--background2)] py-14 lg:py-24 rounded-3xl relative top-shape overflow-hidden">
-            <div className="max-w-[1360px] mx-auto px-4 md:px-6 flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+            <div className="max-w-[1400px] mx-auto px-4 md:px-6 flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
                 <div className="flex flex-col">
                     <motion.div
