@@ -141,7 +141,7 @@ const BlogsMain = () => {
                   <div className="relative z-1 flex flex-col justify-between p-2 md:p-6">
 
                     <div className="">
-                      <p className="text-xs bg-[#ECF0F0] rounded-sm px-4 py-1 text-[#626262] sm:text-sm inline-block font-normal max-w-[250px]">{choose.date}</p>
+                      <p className="bg-[#ECF0F0] rounded-sm px-4 py-1 text-[#626262] mb-2 text-xs inline-block font-normal max-w-[250px]">{choose.date}</p>
 
                       <h3 className="text-lg md:text-xl leading-none font-semibold text-site  mt-2 min-h-[70px]">{choose.title}</h3>
 

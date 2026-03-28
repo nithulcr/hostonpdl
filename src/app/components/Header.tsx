@@ -6,6 +6,8 @@ import { ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
+import Image from "next/image";
+
 
 
 
@@ -18,9 +20,9 @@ const navItems = [
         label: "Projects",
         href: "#",
         submenu: [
-            { href: "", label: "Binghati" },
-            { href: "", label: "Danube Properties" },
-            { href: "", label: "Sobha Realty" },
+            { href: "", label: "Binghati",  icon: '/binghatti.png', },
+            { href: "", label: "Danube Properties",  icon: '/danube.png', },
+            { href: "", label: "Sobha Realty",  icon: '/sobha.png', },
 
 
         ],
@@ -183,7 +185,7 @@ export default function Header() {
                                     >
                                         <Link
                                             href={item.href}
-                                            className={`place-items-center menu-text h-full flex transition-colors duration-300  text-md menu-item ${pathname === item.href ? "menu-active" : ""
+                                            className={`place-items-center menu-text h-full flex transition-colors duration-300  text-xl md:text-md menu-item ${pathname === item.href ? "menu-active" : ""
                                                 }`}
                                         >
                                             {item.label}
@@ -201,9 +203,10 @@ export default function Header() {
                                                         <Link
                                                             key={subItem.label}
                                                             href={subItem.href}
-                                                            className={`block py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md px-4 ${pathname === subItem.href ? "megamenu-active-tab" : ""
+                                                            className={`block py-2  text-gray-700 hover:bg-gray-100 rounded-md px-4 ${pathname === subItem.href ? "megamenu-active-tab" : ""
                                                                 }`}
                                                         >
+                                                            <Image src={subItem.icon || "/logo-white.png"} alt="projects" width={100} height={50} className="h-[30px] w-full max-w-[100px]  object-contain mb-2" />
                                                             {subItem.label}
                                                         </Link>
                                                     ))}
@@ -216,7 +219,7 @@ export default function Header() {
                                         key={`${item.label}-${item.href}`}
 
                                         href={item.href}
-                                        className={`place-items-center flex transition-colors duration-300  text-md menu-item ${pathname === item.href ? "menu-active" : ""
+                                        className={`place-items-center flex transition-colors duration-300  text-xl md:text-md menu-item ${pathname === item.href ? "menu-active" : ""
                                             }`}
                                     >
                                         {item.label}
@@ -257,7 +260,7 @@ export default function Header() {
                         item.submenu ? (
                             <div key={item.href} className="p-2">
                                 <div
-                                    className="flex justify-between items-center "
+                                    className="flex justify-between items-center text-2xl md:text-md"
                                     onClick={() => setOpenDropdowns((prev) => ({ ...prev, [item.label]: !openDropdowns[item.label] }))}
                                 >
                                     <span>{item.label}</span>
@@ -282,7 +285,7 @@ export default function Header() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className={`block hover:text-[var(--siteColor)] p-2 rounded-lg ${pathname === item.href ? "text-[var(--siteColor)] megamenu-active-tab" : ""}`}
+                                className={`block hover:text-[var(--siteColor)] p-2 rounded-lg text-2xl md:text-md ${pathname === item.href ? "text-[var(--siteColor)] megamenu-active-tab" : ""}`}
                             >
                                 {item.label}
                             </Link>

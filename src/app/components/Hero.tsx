@@ -148,7 +148,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
               className="relative z-10 max-w-[1400px] max-h-[calc(100dvh-80px)] mx-auto px-4 md:px-6 py-30 lg:py-40 h-full flex flex-col justify-center text-left"
             >
-              <h5 className="bg-[var(--siteColor)] w-fit px-3 py-[2px] mb-5 uppercase">
+              <h5 className="bg-[var(--siteColor)] w-fit px-3 py-[2px] mb-5 uppercase text-sm md:text-md">
                Solaris Luxe Elite
               </h5>
 

@@ -18,6 +18,8 @@ import Platform from "./Platform";
 
 
 
+
+
 import Testimonials from "./Testimonials";
 import Blogs from "./Blogs";
 
@@ -49,6 +51,7 @@ export default function HomePageClient() {
           <Platform />
 
           <Blogs />
+        
 
 
 
