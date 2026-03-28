@@ -4,20 +4,19 @@ import { useState, useEffect } from "react";
 
 import Header from "./Header";
 import Hero from "./Hero";
-import OurValues from "./OurValues";
+import OurValues from "./OurValues"
+import Insights from "./Insights";
+
 import CaseStudy from "./CaseStudy";
 
 
+import Features from "./Features";
+import Platform from "./Platform";
 
 
 
-import Services from "./Services";
 
 
-import ThreeStepProcess from "./ThreeStepProcess";
-import Insights from "./Insights";
-
-import MainServices from "./MainServices";
 
 import Testimonials from "./Testimonials";
 import Blogs from "./Blogs";
@@ -41,16 +40,14 @@ export default function HomePageClient() {
 
 
 
-        
-          <Services />
-          
+         
+          <Features />
 
-
-          <MainServices />
-          <ThreeStepProcess />
 
 
           <Testimonials />
+          <Platform />
+
           <Blogs />
 
 

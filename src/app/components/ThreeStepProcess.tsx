@@ -31,7 +31,7 @@ export default function ThreeStepProcess() {
     useStaggeredFadeUp(fadeRef as React.RefObject<HTMLElement>);
     return (
         <section className=" py-14 lg:py-24 relative bottom-shape overflow-hidden bg-[var(--background2)]">
-            <div className="max-w-[1400px] mx-auto px-6">
+            <div className="max-w-[1360px] mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function ThreeStepProcess() {
                                 <circle cx="28.7425" cy="29.1165" r="22.3797" fill="white" />
                                 <path d="M21.3978 29.1167H23.2606M33.3197 29.1167L28.849 24.646M33.3197 29.1167L28.849 33.5874M33.3197 29.1167H25.496" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <div className="gradient-text mb-4 text-7xl md:text-9xl font-semibold bg-[linear-gradient(180deg,#000_16%,#007cc3_88%)] bg-clip-text text-transparent">
+                            <div className="gradient-text mb-4 text-7xl md:text-9xl font-semibold bg-[linear-gradient(180deg,#000_16%,#fe5722_88%)] bg-clip-text text-transparent">
                                 {step.number}
                             </div>
 

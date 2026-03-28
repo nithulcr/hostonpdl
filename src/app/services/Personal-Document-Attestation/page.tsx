@@ -35,7 +35,7 @@ export default function Personal() {
       />
       <section className="py-14 lg:py-24   service-section relative">
 
-        <div className="max-w-[1400px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
+        <div className="max-w-[1360px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-8 lg:col-span-2'>
             <div>
               <h1 className='text-[20px] lg:text-[30px]  font-semibold mb-1 leading-none max-w-[600px]'>Personal Document Attestation</h1>

@@ -146,7 +146,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="relative z-10 max-w-[1400px] max-h-[calc(100dvh-80px)] mx-auto px-4 md:px-6 py-30 lg:py-40 h-full flex flex-col justify-center text-left"
+              className="relative z-10 max-w-[1360px] max-h-[calc(100dvh-80px)] mx-auto px-4 md:px-6 py-30 lg:py-40 h-full flex flex-col justify-center text-left"
             >
               <h5 className="bg-[var(--siteColor)] w-fit px-3 py-[2px] mb-5 uppercase">
                Solaris Luxe Elite
@@ -154,21 +154,21 @@ const Hero = () => {
 
               {slide.heading && (
                 <h1
-                  className="text-4xl md:text-[74px] font-bold md:mb-2 head-font max-w-[850px]"
+                  className="text-4xl md:text-[74px] font-bold mb-2 head-font max-w-[850px]"
                   dangerouslySetInnerHTML={{ __html: slide.heading }}
                 />
               )}
 
               {slide.description1 && (
-                <div className=" max-w-[540px]">
-                  <p className="text-lg md:text-xl md:my-3 font-light2 max-w-lg">
+                <div className=" max-w-[600px]">
+                  <p className="text-md md:text-xl my-3 font-light2  leading-tight">
                     {slide.description1}
                   </p>
                 </div>
               )}
 
               {slide.contactLink && (
-                <div className="flex flex-wrap gap-4 mt-3 max-w-[540px]">
+                <div className="flex flex-wrap gap-3 xs:gap-4 mt-3 max-w-[540px]">
                   <AnimatedButton
                     href={slide.contactLink}
                     label="Book Consultation"

@@ -9,7 +9,7 @@ import type { SwiperOptions } from 'swiper/types';
 import AnimatedButton from "./AnimatedButton";
 import { motion } from "framer-motion";
 import { useStaggeredFadeUp } from "./useStaggeredFadeUp";
-import SignatureIcon from "../components/SignatureIcon";
+
 
 
 interface Testimonial {
@@ -73,17 +73,17 @@ export default function Testimonials() {
 
     return (
         <section className="rounded-3xl testimonials-section overflow-hidden relative lg:py-24 py-14 ">
-            <div className="mx-auto  max-w-[1400px] lg:pl-6  flex flex-col items-center justify-center">
+            <div className="mx-auto  max-w-[1360px] lg:pl-6  flex flex-col items-center justify-center">
                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }} className="heading flex flex-col items-center max-w-[550px] mx-auto mb-10">
-                    <div className="flex items-center gap-2 text-site mb-2 uppercase text-sm">
-                        <SignatureIcon width={20} height={20} />
+                    <div className="flex items-center gap-2 text-site mb-2 uppercase text-md">
+                       
                        read reviews
                     </div>
-                    <h2 ref={fadeRef} className="text-center fade-up-stagger text-3xl lg:text-[54px] font-medium mb-1 leading-none text-site">
+                    <h2 ref={fadeRef} className="text-center fade-up-stagger text-3xl lg:text-[54px] font-medium mb-1 leading-none">
                        Stories of trust
                     </h2>
                 </motion.div>
@@ -91,10 +91,10 @@ export default function Testimonials() {
                 <div className="w-full  lg:mt-6 flex gap-12">
                     <div className='min-w-[150px] hidden sm:block '>
                         <svg width="87" height="77" viewBox="0 0 87 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M59.6377 76.1558C56.7646 76.1558 54.0091 75.0144 51.9774 72.9827C49.9458 70.9511 48.8044 68.1956 48.8044 65.3224L48.8044 32.8224C48.8044 15.8683 57.7419 4.69368 74.5715 0.484939C75.2634 0.30635 75.9838 0.266418 76.6912 0.367461C77.3986 0.468505 78.079 0.708526 78.6933 1.07369C79.3075 1.43885 79.8434 1.92194 80.2701 2.49512C80.6968 3.06831 81.0059 3.72026 81.1796 4.41342C81.3532 5.10658 81.388 5.82725 81.2819 6.53391C81.1758 7.24058 80.9309 7.91926 80.5614 8.53088C80.1919 9.14249 79.705 9.67493 79.1287 10.0975C78.5525 10.5202 77.8984 10.8246 77.204 10.9933C65.1411 14.0103 59.6377 20.8895 59.6377 32.8224L59.6377 38.2391L75.8877 38.2391C78.6209 38.2382 81.2533 39.2705 83.2574 41.1289C85.2614 42.9873 86.489 45.5345 86.694 48.2599L86.7211 49.0724L86.7211 65.3224C86.7211 68.1956 85.5797 70.9511 83.5481 72.9828C81.5164 75.0144 78.7609 76.1558 75.8877 76.1558L59.6377 76.1558ZM10.8877 76.1558C8.01455 76.1558 5.25905 75.0144 3.2274 72.9827C1.19576 70.9511 0.0543906 68.1956 0.0543909 65.3224L0.0543937 32.8224C0.0543952 15.8683 8.9919 4.69368 25.8215 0.484934C26.5134 0.306345 27.2338 0.266413 27.9412 0.367457C28.6486 0.468501 29.329 0.708522 29.9433 1.07369C30.5575 1.43885 31.0934 1.92193 31.5201 2.49512C31.9468 3.06831 32.2559 3.72026 32.4296 4.41342C32.6032 5.10658 32.638 5.82725 32.5319 6.53391C32.4258 7.24057 32.1809 7.91925 31.8114 8.53087C31.4418 9.14248 30.955 9.67493 30.3787 10.0975C29.8025 10.5202 29.1484 10.8246 28.454 10.9933C16.3911 14.0103 10.8877 20.8895 10.8877 32.8224L10.8877 38.2391L27.1377 38.2391C29.8709 38.2382 32.5033 39.2705 34.5074 41.1289C36.5114 42.9873 37.739 45.5345 37.944 48.2599L37.9711 49.0724L37.9711 65.3224C37.9711 68.1956 36.8297 70.9511 34.7981 72.9827C32.7664 75.0144 30.0109 76.1558 27.1377 76.1558L10.8877 76.1558Z" fill="#007cc3" />
+                            <path d="M59.6377 76.1558C56.7646 76.1558 54.0091 75.0144 51.9774 72.9827C49.9458 70.9511 48.8044 68.1956 48.8044 65.3224L48.8044 32.8224C48.8044 15.8683 57.7419 4.69368 74.5715 0.484939C75.2634 0.30635 75.9838 0.266418 76.6912 0.367461C77.3986 0.468505 78.079 0.708526 78.6933 1.07369C79.3075 1.43885 79.8434 1.92194 80.2701 2.49512C80.6968 3.06831 81.0059 3.72026 81.1796 4.41342C81.3532 5.10658 81.388 5.82725 81.2819 6.53391C81.1758 7.24058 80.9309 7.91926 80.5614 8.53088C80.1919 9.14249 79.705 9.67493 79.1287 10.0975C78.5525 10.5202 77.8984 10.8246 77.204 10.9933C65.1411 14.0103 59.6377 20.8895 59.6377 32.8224L59.6377 38.2391L75.8877 38.2391C78.6209 38.2382 81.2533 39.2705 83.2574 41.1289C85.2614 42.9873 86.489 45.5345 86.694 48.2599L86.7211 49.0724L86.7211 65.3224C86.7211 68.1956 85.5797 70.9511 83.5481 72.9828C81.5164 75.0144 78.7609 76.1558 75.8877 76.1558L59.6377 76.1558ZM10.8877 76.1558C8.01455 76.1558 5.25905 75.0144 3.2274 72.9827C1.19576 70.9511 0.0543906 68.1956 0.0543909 65.3224L0.0543937 32.8224C0.0543952 15.8683 8.9919 4.69368 25.8215 0.484934C26.5134 0.306345 27.2338 0.266413 27.9412 0.367457C28.6486 0.468501 29.329 0.708522 29.9433 1.07369C30.5575 1.43885 31.0934 1.92193 31.5201 2.49512C31.9468 3.06831 32.2559 3.72026 32.4296 4.41342C32.6032 5.10658 32.638 5.82725 32.5319 6.53391C32.4258 7.24057 32.1809 7.91925 31.8114 8.53087C31.4418 9.14248 30.955 9.67493 30.3787 10.0975C29.8025 10.5202 29.1484 10.8246 28.454 10.9933C16.3911 14.0103 10.8877 20.8895 10.8877 32.8224L10.8877 38.2391L27.1377 38.2391C29.8709 38.2382 32.5033 39.2705 34.5074 41.1289C36.5114 42.9873 37.739 45.5345 37.944 48.2599L37.9711 49.0724L37.9711 65.3224C37.9711 68.1956 36.8297 70.9511 34.7981 72.9827C32.7664 75.0144 30.0109 76.1558 27.1377 76.1558L10.8877 76.1558Z" fill="#fe5722" />
                         </svg>
 
-                        <h5 className='text-xl text-site mt-4 block'>What our<br></br>
+                        <h5 className='text-xl mt-4 block'>What our<br></br>
                             Clients are<br></br>
                             saying</h5>
                         <div className='slider-arrows flex gap-4  mt-5'>
@@ -116,7 +116,7 @@ export default function Testimonials() {
                         </div>
 
                     </div>
-                    <div className='w-full cursor-grab text-white'>
+                    <div className='w-full cursor-grab '>
                         <Swiper
                             modules={[Autoplay, Navigation]}
                             navigation={{
@@ -147,7 +147,7 @@ export default function Testimonials() {
                         >
                             {testimonialsItems.map((item, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="bg-[var(--siteColor)] rounded-2xl  p-4  lg:p-6  relative  flex flex-col h-full  ">
+                                    <div className="bg-white rounded-2xl  p-4  lg:p-6  relative  flex flex-col h-full  ">
 
                                         <div className="flex items-center gap-2 mb-2">
                                             <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">

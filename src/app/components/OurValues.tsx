@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useEffect } from "react";
-import AnimatedButton from "./AnimatedButton";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useStaggeredFadeUp } from "./useStaggeredFadeUp";
@@ -94,15 +93,15 @@ const Services = () => {
 
     return (
         <section ref={containerRef} id="services" className="section overflow-hidden py-14 lg:py-28">
-            <div className="max-w-[1400px] mx-auto px-6">
+            <div className="max-w-[1360px] mx-auto px-6">
 
 
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1  w-full">
 
                     <div className="services-rotate-right bg-[#fffdf3]  hover:bg-[#26957d40] relative  p-8 flex flex-col justify-between">
-                        <h3 className="text-7xl font-monument text-[var(--siteColor)]">100+</h3>
+                        <h3 className="text-7xl font-monument text-[var(--siteColor)] font-bold">100+</h3>
                         <div className="leading-snug text-right tracking-wide max-w-[340px] ml-auto mt-10 lg:mt-20">
-                            <h4 className="xl font-medium uppercase ">
+                            <h4 className="text-xl font-medium uppercase ">
                                 Global Clients
                             </h4>
                             <p className="text-[15px] font-light  mt-3">
@@ -111,20 +110,20 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="services-up-bottom bg-[var(--siteColor)]  hover:bg-[var(--siteColor3)] text-white relative p-8 flex flex-col justify-between">
-                        <h3 className="text-7xl font-monument">7+</h3>
-                        <div className="leading-snug text-right tracking-wide max-w-[340px] ml-auto mt-10 lg:mt-20">
-                            <h4 className="xl font-medium uppercase ">
+                        <h3 className="text-7xl font-monument font-bold">7+</h3>
+                        <div className="leading-snug text-right tracking-wide max-w-[340px] ml-auto mt-10 lg:mt-20" >
+                            <h4 className="text-xl font-medium uppercase ">
                               Years Excellence
                             </h4>
                             <p className="text-[15px] font-light  mt-3">
-                               A legacy of navigating Dubai's market shifts with radiant precision and integrity.
+                               A legacy of navigating Dubai&apos;s market shifts with radiant precision and integrity.
                             </p>
                         </div>
                     </div>
                     <div className="services-rotate-left bg-[#fffdf3]  hover:bg-[#6f8f1042] relative p-8 flex flex-col justify-between">
-                        <h3 className="text-7xl font-monument text-[var(--siteColor)]">30+</h3>
+                        <h3 className="text-7xl font-monument text-[var(--siteColor)] font-bold">30+</h3>
                         <div className="leading-snug text-right tracking-wide max-w-[340px] ml-auto mt-10 lg:mt-20">
-                            <h4 className="xl font-medium uppercase ">
+                            <h4 className="text-xl font-medium uppercase ">
                                Campaigns
                             </h4>
                             <p className="text-[15px] font-light  mt-3">

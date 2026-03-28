@@ -59,19 +59,19 @@ const BlogsMain = () => {
   useStaggeredFadeUp(fadeRef as React.RefObject<HTMLElement>);
 
   return (
-    <section className="py-14 lg:py-24  bg-[var(--background2)] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 ">
+    <section className="py-14 lg:py-24  bg-[var(--background)] overflow-hidden">
+      <div className="max-w-[1360px] mx-auto px-6 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }} className="heading flex flex-col gap-4 md:flex-row justify-between items-center  mx-auto mb-10 md:mb-14">
           <div>
-            <div className="flex items-center gap-2 text-site mb-2 uppercase text-md justify-center md:justify-start">
-              <SignatureIcon width={20} height={20} />
+            <div className="flex items-center gap-2 text-site mb-3 uppercase text-md justify-center md:justify-start">
+            
               Recent News
             </div>
-            <h2 ref={fadeRef} className="text-center md:text-left fade-up-stagger text-3xl lg:text-[54px]  font-medium mb-1 leading-none text-site">
+            <h2 ref={fadeRef} className="text-center md:text-left fade-up-stagger text-3xl lg:text-[54px]  font-medium mb-1 leading-none">
               Insights & Expertise
             </h2>
           </div>
@@ -129,19 +129,19 @@ const BlogsMain = () => {
             {data.map((choose, index) => (
               <SwiperSlide key={`${choose.title}-${index}`}>
                 <div
-                  className="group bg-[var(--background)] rounded-3xl grid lg:grid-cols-2 gap-2 p-3 md:p-4 relative h-full min-h-[240px] lg:min-h-[330px]  relative overflow-hidden"
+                  className="group bg-[#ffffff91]  grid lg:grid-cols-2 gap-2 rounded-lg p-3 md:p-4 relative h-full min-h-[240px] lg:min-h-[330px]  relative overflow-hidden"
                 >
 
                   <div className="relative min-h-[150px]">
 
-                    <Image src={choose.img} alt="ProcessMain" layout="fill" className="object-cover rounded-2xl issue-image w-full h-full " />
+                    <Image src={choose.img} alt="ProcessMain" layout="fill" className="object-cover w-full h-full rounded-md" />
 
                   </div>
 
                   <div className="relative z-1 flex flex-col justify-between p-2 md:p-6">
 
                     <div className="">
-                      <p className="text-xs bg-[#ECF0F0] rounded-lg px-4 py-1 text-[#626262] sm:text-sm inline-block font-normal max-w-[250px]">{choose.date}</p>
+                      <p className="text-xs bg-[#ECF0F0] rounded-sm px-4 py-1 text-[#626262] sm:text-sm inline-block font-normal max-w-[250px]">{choose.date}</p>
 
                       <h3 className="text-lg md:text-xl leading-none font-semibold text-site  mt-2 min-h-[70px]">{choose.title}</h3>
 
