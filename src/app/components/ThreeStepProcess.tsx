@@ -1,4 +1,4 @@
-// components/ThreeStepProcess.tsx
+'use client';
 
 import React, { useRef } from "react";
 import { motion } from "framer-motion";

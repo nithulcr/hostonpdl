@@ -31,7 +31,7 @@ const navItems = [
 
 
     { href: "#", label: "Services" },
-    { href: "#", label: "Contact Us" },
+    { href: "/ContactUs", label: "Contact Us" },
 ];
 
 export default function Header() {

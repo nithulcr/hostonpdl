@@ -186,7 +186,7 @@ export default function Testimonials() {
 
                                         </div>
 
-                                        <p className="mt-1  text-lg font-light2">&ldquo;{item.review}&rdquo;</p>
+                                        <p className="mt-1  text-sm md:text-lg font-light2">&ldquo;{item.review}&rdquo;</p>
                                         <div className="flex items-center mt-3">
                                             <img
                                                 src={item.avatar}

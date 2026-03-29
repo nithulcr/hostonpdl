@@ -46,7 +46,7 @@ export default function CEO() {
             >
               Raju Padinhattayil
             </h2>
-            <span>CEO, HOST ON PDL</span>
+            <span>Founder And CEO, HOST ON PDL</span>
           </div>
 
           <p className="leading-relaxed text-justify font-light2">

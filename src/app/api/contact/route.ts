@@ -3,35 +3,44 @@ import nodemailer from 'nodemailer';
 
 type FormData = {
   name: string;
+  secondname?: string;
   email: string;
   number: string;
   message: string;
 };
 
 export async function POST(req: NextRequest) {
-  const { name, email, number, message } = await req.json() as FormData;
-
-  if (!name || !email || !number || !message) {
-    return NextResponse.json({ success: false, error: 'Missing fields' }, { status: 400 });
-  }
-
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-
   try {
+    const body = await req.json();
+    console.log('📩 Received contact form data:', body);
+    const { name, secondname, email, number, message } = body as FormData;
+
+    if (!name || !email || !number || !message) {
+      return NextResponse.json({ success: false, error: 'Missing fields' }, { status: 400 });
+    }
+
+    // Check if environment variables are set
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS || !process.env.RECIPIENT_EMAIL) {
+      console.error('❌ Missing environment variables for email');
+      return NextResponse.json({ success: false, error: 'Internal configuration error' }, { status: 500 });
+    }
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
     const info = await transporter.sendMail({
-      from: `Host on PDL uae Website`,
+      from: `"Host on PDL Website" <${process.env.EMAIL_USER}>`,
       to: process.env.RECIPIENT_EMAIL,
       replyTo: email,
       subject: 'New Contact Message from Host on PDL Website',
       html: `
         <h2>New Message Received</h2>
-        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Name:</strong> ${name} ${secondname || ''}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${number}</p>
         <p><strong>Message:</strong><br>${message}</p>
@@ -43,13 +52,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true }, { status: 200 });
   }
   catch (error: unknown) {
+    console.error('❌ Error in contact API route:', error);
     let errorMessage = 'Failed to send email';
 
     if (error instanceof Error) {
-      errorMessage = (error as Error).message;
-      console.error('❌ Error sending email:', error);
-    } else {
-      console.error('❌ Unknown error sending email:', error);
+      errorMessage = error.message;
     }
 
     return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });

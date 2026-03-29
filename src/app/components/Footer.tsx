@@ -159,7 +159,9 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-1">
                   <span className="opacity-60 text-[14px]">Call Us 24/7</span>
-                  <span className="">+91 123 456 789</span>
+                  <span className="">+971 54 219 2773</span>
+                  <span className="">+91 9846 272 623</span>
+
                 </div>
               </li>
               <li className="flex items-center gap-4 text-[15px]">
@@ -172,7 +174,7 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-1">
                   <span className="opacity-60 text-[14px]">business@HostonPDL.com</span>
-                  <a href="mailto:business@HostonPDL.com" className="">business@HostonPDL.com</a>
+                  <a href="mailto:business@HostonPDL.com" className="">hpdl0007@gmail.com</a>
                 </div>
               </li>
               <li className="flex gap-4 text-[15px]">
@@ -185,7 +187,7 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-1">
                   <span className="opacity-60 text-[14px]">Our Location</span>
-                  <span className="">Dubai | Kerala | Bangalore</span>
+                  <span className="">Thavakkara Complex Thavakkara Kannur - 2, Kerala 670002</span>
                 </div>
               </li>
             </ul>
@@ -207,8 +209,6 @@ export default function Footer() {
           |
           <Link href="">Privacy Policy</Link>
 
-          |
-          <Link href="">Terams & Conditions</Link>
         </div>
       </div>
       </div>

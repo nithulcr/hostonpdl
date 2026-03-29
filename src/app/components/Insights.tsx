@@ -1,4 +1,4 @@
-// components/ThreeStepProcess.tsx
+'use client';
 
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
@@ -26,7 +26,7 @@ const features = [
 ];
 
 
-export default function ThreeStepProcess() {
+export default function Insights() {
     const fadeRef = useRef<HTMLHeadingElement>(null);
     useStaggeredFadeUp(fadeRef as React.RefObject<HTMLElement>);
     return (
