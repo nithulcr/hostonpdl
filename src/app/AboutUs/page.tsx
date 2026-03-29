@@ -26,7 +26,7 @@ export default function Home() {
                       alt="building"
                       width={600}
                       height={600}
-                      className="object-cover w-[350px] opacity-40 absolute bottom-0 right-0 "
+                      className="object-cover w-[150px] lg:w-[350px] opacity-40 absolute bottom-0 right-0 "
                     />
         <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1  gap-8 lg:gap-10 items-center">
           <motion.div
@@ -40,7 +40,7 @@ export default function Home() {
             </h5>
 
 
-            <h1 className="text-4xl md:text-[4px] xl:text-[86px] font-bold mb-2 head-font max-w-[700px]">
+            <h1 className="text-4xl md:text-[44px] xl:text-[86px] font-bold mb-2 head-font max-w-[700px]">
               We Create, Launch, and <span className="text-site">Grow Your Brand</span>
 
             </h1>
@@ -69,7 +69,7 @@ export default function Home() {
                 alt="Business for Success"
                 width={1000}
                 height={1000}
-                className="object-cover f-full w-full  mx-auto max-w-[700px]"
+                className="object-cover f-full w-full "
               />
 
 
@@ -81,7 +81,7 @@ export default function Home() {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }} className="heading flex flex-col gap-2 py-8">
 
-                <div className="flex items-center gap-2 text-site mb-2 uppercase text-md justify-center md:justify-start">
+                <div className="flex items-center gap-2 text-site mb-2 uppercase text-md ">
 
                   Get to Know Us
                 </div>
@@ -110,7 +110,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
-            className=" grid  md:grid-cols-3 md:grid-cols-2 gap-5  relative  mt-16">
+            className=" grid  md:grid-cols-2 lg:grid-cols-3 gap-5  relative md:mt-16">
 
             <div
 

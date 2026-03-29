@@ -17,7 +17,7 @@ export default function CEO() {
             alt="CEO"
             width={700}
             height={700}
-            className="object-cover f-full  mx-auto max-w-[700px]"
+            className="object-cover f-full  mx-auto max-w-[700px] w-full"
           />
 
         </div>
@@ -27,7 +27,7 @@ export default function CEO() {
             alt="quate"
             width={1000}
             height={1000}
-            className="object-cover w-[100px] opacity-20 absolute top-[-70px] left-[-50px] scale-x-[-1]"
+            className="object-cover w-[100px] opacity-20 absolute top-[-20px] left-[-20px] lg:top-[-70px] lg:left-[-50px] scale-x-[-1]"
           />
           <Image
             src="/quate.png"
