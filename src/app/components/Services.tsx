@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import AnimatedButton from "./AnimatedButton";
 import Image from "next/image";
-import SignatureIcon from "../components/SignatureIcon";
+
 
 
 
@@ -67,9 +67,8 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }} className="heading flex flex-col items-center  text-white max-w-[600px] mx-auto mb-14 mx-auto px-6">
-          <div className="flex items-center gap-2 mb-3 uppercase text-sm white-icon">
-           <SignatureIcon width={20} height={20} />
-
+          <div className="flex items-center gap-2 mb-3 uppercase text-sm">
+           
            Dubai Real Estate.
           </div>
           <h2 ref={fadeRef} className="text-center  fade-up-stagger text-3xl lg:text-[54px] font-medium mb-1 leading-none  ">

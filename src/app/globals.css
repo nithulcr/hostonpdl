@@ -55,9 +55,6 @@ h1 span{
 color: var(--siteColor3);
 display: block;
 }
-.white-icon svg path{
-  fill: white;
-}
 
 
 .filling-line-fill {
@@ -364,10 +361,15 @@ height:100%;
   fill: var(--siteColor);
 }
 
-.button:hover .button-text > .btn-svg{
+.button svg{
+  transition: .3s;
+}
+.button:hover .button-text > .btn-svg svg{
  transform: rotate(-135deg);
 }
-
+.button:hover .button-text > .btn-svg .whatsapp{
+ transform: none!important;
+}
 .whatsapp-btn svg{
   display: none;
 }
