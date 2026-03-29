@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useStaggeredFadeUp } from "./useStaggeredFadeUp";
 import { motion, number } from "framer-motion";
-import SignatureIcon from "../components/SignatureIcon";
+
 import AnimatedButton from "../components/AnimatedButton";
 
 
@@ -120,7 +120,7 @@ const Services = () => {
                 >
                     <div className=" max-w-[460px]">
                         <div className="flex gap-2 mb-3 uppercase  text-sm md:justify-start white-icon">
-                            <SignatureIcon width={20} height={20} />
+                           
                             Our Services
                         </div>
                         <h2

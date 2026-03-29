@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from 'swiper';
 import AnimatedButton from "./AnimatedButton";
 import Image from "next/image";
-import SignatureIcon from "../components/SignatureIcon";
+
 
 
 

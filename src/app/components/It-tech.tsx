@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { useStaggeredFadeUp } from "./useStaggeredFadeUp";
-import SignatureIcon from "./SignatureIcon";
+
 import Image from "next/image";
 
 
@@ -34,7 +34,7 @@ export default function ThreeStepProcess() {
                         transition={{ duration: 0.5 }} className="heading flex flex-col gap-2 ">
 
                         <div className="flex items-center gap-2 text-site mb-2 uppercase text-md justify-center md:justify-start">
-                            <SignatureIcon width={20} height={20} />
+                          
                             Alongside real estate services
                         </div>
                         <h2 ref={fadeRef} className="text-center md:text-left fade-up-stagger text-3xl lg:text-[54px] max-w-[500px] font-medium mb-1 leading-none text-site">
