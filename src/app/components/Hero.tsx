@@ -23,7 +23,7 @@ type SlideType = {
 /* ✅ Slides Data */
 const slidesContent: SlideType[] = [
   {
-    imageSrc: "/hero5.png",
+    imageSrc: "/hero5.webp",
     heading: "Invest in Dubai <span>Real Estate</span>",
     description1:
       "Experience exponential growth in the world's most dynamic capital market. Secure your legacy with high-yield Solaris curator assets.",
@@ -31,7 +31,7 @@ const slidesContent: SlideType[] = [
     contactLink2: "#",
   },
   {
-    imageSrc: "/hero1.png",
+    imageSrc: "/hero1.webp",
     heading: "Binghatti, Redefining <span>Real Estate Design</span>",
     description1:
       "Binghatti creates iconic hyper-properties through innovative design.",
@@ -39,7 +39,7 @@ const slidesContent: SlideType[] = [
     contactLink2: "#",
   },
   {
-    imageSrc: "/hero2.png",
+    imageSrc: "/hero2.webp",
     heading:
       "Danube Properties,  <span>Multi-Million Dollar Group</span>",
     description1:
@@ -48,7 +48,7 @@ const slidesContent: SlideType[] = [
     contactLink2: "#",
   },
   {
-    imageSrc: "/hero3.png",
+    imageSrc: "/hero3.webp",
     heading: "Sobha Realty,  <span>Building Excellence</span>",
     description1:
       "We focus on craftsmanship and detailing is a part of our legacy, spanning five decades.",

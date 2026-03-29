@@ -7,6 +7,8 @@ import { useStaggeredFadeUp } from "../components/useStaggeredFadeUp";
 
 import Header from "../components/Header";
 import CEO from "../components/CEO";
+import Team from "../components/Team";
+
 
 import Footer from "../components/Footer";
 
@@ -65,7 +67,7 @@ export default function Home() {
             <div className="relative flex justify-center  lg:flex h-full">
 
               <Image
-                src="/hero4.jpg"
+                src="/hero4.webp"
                 alt="Business for Success"
                 width={1000}
                 height={1000}
@@ -162,6 +164,8 @@ export default function Home() {
       </section>
 
       <CEO />
+      <Team />
+
       <Footer />
 
     </>

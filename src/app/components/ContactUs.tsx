@@ -130,7 +130,7 @@ export default function ContactSection() {
                 Have Any Questions? 
              
               </h2>
-              <p className="font-light">Got questions or need guidance? Our team is always ready to help you take the next step—whether it's a quick inquiry or a full project discussion.</p>
+              <p className="font-light">Got questions or need guidance? Our team is always ready to help you take the next step—whether it&apos;s a quick inquiry or a full project discussion.</p>
 
             </motion.div>
 

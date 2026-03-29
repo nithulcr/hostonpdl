@@ -88,19 +88,19 @@ const CaseStudy = () => {
               </div>
 
               {/* Content */}
-              <div className="p-8 pb-10">
+              <div className="p-5 md:p-8 md:pb-10">
                 <h5 className="xl md:text-[26px] font-bold uppercase mb-2">
                   {item.title}
                 </h5>
 
-                <div className="text-gray text-lg flex items-center gap-1">
+                <div className="text-gray md:text-lg flex items-center gap-1">
                   <MapPin className="text-site h-5" />
                   {item.location}
                 </div>
 
-                <span className="bg-gray-300 block w-full h-[1px] my-8"></span>
+                <span className="bg-gray-300 block w-full h-[1px] my-4 md:my-8"></span>
 
-                <div className="grid md:grid-cols-2">
+                <div className="grid grid-cols-2">
                   <div>
                     <h3 className="uppercase text-gray mb-1 text-xs font-semibold">
                       Starting From

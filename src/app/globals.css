@@ -154,7 +154,9 @@ display: block;
 .case-col:nth-child(even){
   margin-top: 80px;
 }
-
+.team .case-col:nth-child(even){
+  margin-top: 0px;
+}
 .font-light2 {
   font-weight: 200;
 }

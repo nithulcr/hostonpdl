@@ -12,13 +12,13 @@ export default function ContactUsPage() {
     <>
       <Header />
       <section className="py-14 lg:py-24  relative top-shape overflow-hidden">
-        {/* <Image
+        <Image
           src="/building.png"
           alt="building"
           width={600}
           height={600}
           className="object-cover w-[150px] lg:w-[350px] opacity-40 absolute bottom-0 right-0 "
-        /> */}
+        />
         <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1  gap-8 lg:gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

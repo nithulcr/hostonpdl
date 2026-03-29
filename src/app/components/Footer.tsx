@@ -205,9 +205,9 @@ export default function Footer() {
         <div className="text-xs md:text-sm">Host on PDL - Copyright 2026. All rights reserved.</div>
         <div className=" text-xs md:text-sm flex items-center gap-2 md:gap-3">
          
-          <Link href="">Legal Desclaimer</Link>
+          <Link href="/Legal_Desclaimer">Legal Desclaimer</Link>
           |
-          <Link href="">Privacy Policy</Link>
+          <Link href="/Privacy_Policy">Privacy Policy</Link>
 
         </div>
       </div>

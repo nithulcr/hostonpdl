@@ -131,7 +131,7 @@ export default function Features() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }} className="heading flex flex-col gap-2 items-center max-w-[600px] mx-auto mb-14">
+                    transition={{ duration: 0.5 }} className="heading flex flex-col gap-2 items-center max-w-[600px] mx-auto mb-8 md:mb-14">
                     <div className="flex items-center gap-2 text-site mb-2 uppercase text-md">
 
                         PLATFORM
