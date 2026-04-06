@@ -8,27 +8,24 @@ import { MapPin } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Mercedes-Benz Places by Binghatti",
+    title: "Binghatti Developers",
     location: "Downtown Dubai",
     location2: "High ROI",
-    starting: "AED 8.8M",
-    handover: "Q4 2025",
+    description: "A Dubai-based developer known for its distinctive architectural design and branded collaborations, delivering residential projects across key locations with a focus on modern urban living.",
     image: "/bingati-bg.png",
   },
   {
-    title: "Sobha Central",
+    title: "Sobha Realty",
     location: "MBR City",
     location2: "Prime Selection",
-    starting: "AED 8.9M",
-    handover: "Ready",
+    description: "A premium real estate developer recognized for quality craftsmanship and integrated communities, offering thoughtfully designed residences with attention to detail and long-term value.",
     image: "/sobha-bg.png",
   },
   {
-    title: "Danube Breeze",
+    title: "Danube Properties",
     location: "Water Canal",
     location2: "New Launch",
-    starting: "AED 1.2M",
-    handover: "Q2 2026",
+    description: "One of Dubai’s leading developers in the affordable housing segment, known for delivering value-driven residential projects with flexible payment plans and lifestyle-focused amenities.",
     image: "/danube-bg.png",
   },
 ];
@@ -54,7 +51,7 @@ const CaseStudy = () => {
             </div>
             <h2
               ref={fadeRef}
-              className="text-3xl lg:text-[54px] max-w-[550px] font-bold mb-2 leading-none"
+              className="text-3xl lg:text-[54px] max-w-[550px] font-medium mb-2 leading-none"
             >
               Curated Developments
             </h2>
@@ -98,26 +95,11 @@ const CaseStudy = () => {
                   {item.location}
                 </div>
 
-                <span className="bg-gray-300 block w-full h-[1px] my-4 md:my-8"></span>
+                <span className="bg-gray-300 block w-full h-[1px] my-4 md:my-5"></span>
 
-                <div className="grid grid-cols-2">
-                  <div>
-                    <h3 className="uppercase text-gray mb-1 text-xs font-semibold">
-                      Starting From
+                <h3 className="mb-1 text-sm  font-semibold font-light2">
+                     {item.description}
                     </h3>
-                    <h3 className="text-2xl font-black text-site">
-                      {item.starting}
-                    </h3>
-                  </div>
-                  <div>
-                    <h3 className="uppercase text-gray mb-1 text-xs font-semibold">
-                      Handover
-                    </h3>
-                    <h3 className="text-2xl font-black">
-                      {item.handover}
-                    </h3>
-                  </div>
-                </div>
 
                 <span className="bg-[var(--siteColor)] block w-full h-[4px] absolute bottom-0 left-0"></span>
               </div>

@@ -14,19 +14,10 @@ import Image from "next/image";
 const navItems = [
     { href: "/", label: "Home" },
 
-  { href: "/AboutUs", label: "About us" },
-
-    {
-        label: "Projects",
-        href: "#",
-        submenu: [
-            { href: "", label: "Binghati",  icon: '/binghatti.png', },
-            { href: "", label: "Danube Properties",  icon: '/danube.png', },
-            { href: "", label: "Sobha Realty",  icon: '/sobha.png', },
+    { href: "/AboutUs", label: "About us" },
+    { href: "/ProjectLocations", label: "Project Locations" },
 
 
-        ],
-    },
 
 
 
@@ -167,7 +158,7 @@ export default function Header() {
                 <div className="max-w-[1400px]  mx-auto flex items-center justify-between md:px-6 px-3 h-[80px] main-header z-10 relative">
                     <div className="h-full align-content-center flex">
                         <Link href="/" className="items-center flex">
-                           
+
                             <img src="/logo.png" alt="Logo" width={220} height={50} className="w-[170px] md:w-[220px] logo " />
 
                         </Link>
@@ -175,46 +166,7 @@ export default function Header() {
                     <div className="items-center gap-3 lg:gap-10 flex items-center h-full">
                         <nav className="hidden lg:flex gap-4 xl:gap-6 h-full">
                             {navItems.map((item) =>
-                                item.submenu ? (
-                                    <div
-                                        key={`${item.label}-${item.href}`}
-
-                                        className="relative h-full flex items-center"
-                                        onMouseEnter={() => setOpenDropdowns((prev) => ({ ...prev, [item.label]: true }))}
-                                        onMouseLeave={() => setOpenDropdowns((prev) => ({ ...prev, [item.label]: false }))}
-                                    >
-                                        <Link
-                                            href={item.href}
-                                            className={`place-items-center menu-text h-full flex transition-colors duration-300  text-xl md:text-md menu-item ${pathname === item.href ? "menu-active" : ""
-                                                }`}
-                                        >
-                                            {item.label}
-                                            <ChevronDown size={16} className={`ml-1 transition-transform duration-300 ${openDropdowns[item.label] ? "rotate-180" : ""}`} />
-                                        </Link>
-                                        {openDropdowns[item.label] && (
-                                            <motion.div
-                                                initial={{ opacity: 0, y: 20 }}
-                                                animate={{ opacity: 1, y: 0 }}
-                                                transition={{ duration: 0.2 }}
-                                                className="absolute top-full left-1/2 -translate-x-1/2 w-[80vw] max-w-5xl bg-white  shadow-lg z-60"
-                                            >
-                                                <div className="p-6 grid grid-cols-3 gap-x-8 gap-y-1">
-                                                    {item.submenu.map((subItem) => (
-                                                        <Link
-                                                            key={subItem.label}
-                                                            href={subItem.href}
-                                                            className={`block py-2  text-gray-700 hover:bg-gray-100 rounded-md px-4 ${pathname === subItem.href ? "megamenu-active-tab" : ""
-                                                                }`}
-                                                        >
-                                                            <Image src={subItem.icon || "/logo-white.png"} alt="projects" width={100} height={50} className="h-[30px] w-full max-w-[100px]  object-contain mb-2" />
-                                                            {subItem.label}
-                                                        </Link>
-                                                    ))}
-                                                </div>
-                                            </motion.div>
-                                        )}
-                                    </div>
-                                ) : (
+                   
                                     <Link
                                         key={`${item.label}-${item.href}`}
 
@@ -224,7 +176,7 @@ export default function Header() {
                                     >
                                         {item.label}
                                     </Link>
-                                )
+                            
                             )}
                         </nav>
 
@@ -234,7 +186,7 @@ export default function Header() {
                     </div>
                     <div className="items-center gap-2 lg:gap-10 flex items-center h-full">
                         <div className="flex items-center gap-3 md:gap-5">
-                            
+
                             <div className="">
                                 <AnimatedButton href="https://wa.me/123456789" label="Enquire Now" className=" w-fit " />
                             </div>
@@ -257,31 +209,7 @@ export default function Header() {
                     className={`mob-menu lg:hidden bg-[var(--background)] font-light px-4 pt-12 pb-20  shadow-md transition-all duration-300 origin-top ${animation}`}
                 >
                     {navItems.map((item) =>
-                        item.submenu ? (
-                            <div key={item.href} className="p-2">
-                                <div
-                                    className="flex justify-between items-center text-2xl md:text-md"
-                                    onClick={() => setOpenDropdowns((prev) => ({ ...prev, [item.label]: !openDropdowns[item.label] }))}
-                                >
-                                    <span>{item.label}</span>
-                                    <ChevronDown size={16} className={`ml-1 transition-transform duration-300 ${openDropdowns[item.label] ? "rotate-180" : ""}`} />
-                                </div>
-                                {openDropdowns[item.label] && (
-                                    <div className="pl-1 mt-2 space-y-1">
-                                        {item.submenu.map((subItem) => (
-                                            <Link
-                                                key={subItem.label}
-                                                href={subItem.href}
-                                                className={`block p-2 rounded-lg ${pathname === subItem.href ? "megamenu-active-tab" : ""
-                                                    }`}
-                                            >
-                                                {subItem.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
-                        ) : (
+                      (
                             <Link
                                 key={item.href}
                                 href={item.href}

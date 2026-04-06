@@ -8,8 +8,8 @@ import Image from "next/image";
 const features = [
     {
         icon: "/golden-visa.png",
-        title: "Golden Visa Era",
-        desc: "Long-term residency security for global investors, unlocking a permanent gateway to economic dominance.",
+        title: "Golden Visa",
+        desc: "Explore eligibility for long-term residency options, including investor visa pathways linked to qualifying property investments in Dubai, subject to applicable regulations.",
     },
     {
         icon: "/high-roi.png",
@@ -89,9 +89,9 @@ export default function Insights() {
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.7 }} className="relative  h-full w-full">
 
-                    <div className="bg-img   overflow-hidden  ml-auto max-w-[94%] h-[94%]">
+                    <div className="bg-img   overflow-hidden  ml-auto max-w-[94%] h-[94%] ">
                         <Image
-                            src="/insight.png"
+                            src="/trusted-partners.jpg"
                             alt="Insights"
                             width={1000}
                             height={1000}

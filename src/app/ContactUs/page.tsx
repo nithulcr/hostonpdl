@@ -30,7 +30,7 @@ export default function ContactUsPage() {
              Contact Us
             </h5>
 
-            <h1 className="text-4xl md:text-[44px] xl:text-[86px] font-bold mb-2 head-font max-w-[700px]">
+            <h1 className="text-4xl md:text-[44px] xl:text-[76px] font-bold mb-2 head-font max-w-[700px]">
              Let’s discuss your next <span className="text-site">legacy.</span>
             </h1>
 

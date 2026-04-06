@@ -24,34 +24,34 @@ type SlideType = {
 const slidesContent: SlideType[] = [
   {
     imageSrc: "/hero5.webp",
-    heading: "Invest in Dubai <span>Real Estate</span>",
+    heading: "Preferred Channel Partner for  <span>Dubai Off-Plan Properties</span>",
     description1:
-      "Experience exponential growth in the world's most dynamic capital market. Secure your legacy with high-yield Solaris curator assets.",
+      "Partnering with leading developers offering projects across Dubai.",
     contactLink: "#",
     contactLink2: "#",
   },
   {
     imageSrc: "/hero1.webp",
-    heading: "Binghatti, Redefining <span>Real Estate Design</span>",
+    heading: "Explore Off-Plan <span>Investment Opportunities </span> in Dubai",
     description1:
-      "Binghatti creates iconic hyper-properties through innovative design.",
+      "Access a curated portfolio of developer-approved projects with flexible payment plans and prime locations.",
     contactLink: "#",
     contactLink2: "#",
   },
   {
     imageSrc: "/hero2.webp",
     heading:
-      "Danube Properties,  <span>Multi-Million Dollar Group</span>",
+      "Your Trusted Partner in  <span>Dubai Off-Plan Real Estate</span>",
     description1:
-      "The Group runs award-winning brands including Danube Building Materials, Danube Home, and Alucopanel.",
+      "Working closely with reputed developers to help buyers make informed property decisions in Dubai.",
     contactLink: "#",
     contactLink2: "#",
   },
   {
     imageSrc: "/hero3.webp",
-    heading: "Sobha Realty,  <span>Building Excellence</span>",
+    heading: "Access Dubai’s Leading  <span>Off-Plan Developments Projects.</span>",
     description1:
-      "We focus on craftsmanship and detailing is a part of our legacy, spanning five decades.",
+      "Official channel partner for selected developers offering new launch projects across key Dubai locations.",
     contactLink: "#",
     contactLink2: "#",
   },
@@ -154,7 +154,7 @@ const Hero = () => {
 
               {slide.heading && (
                 <h1
-                  className="text-4xl md:text-[74px] font-bold mb-2 head-font max-w-[850px]"
+                  className="text-4xl md:text-[66px] font-bold mb-2 head-font max-w-[750px]"
                   dangerouslySetInnerHTML={{ __html: slide.heading }}
                 />
               )}
