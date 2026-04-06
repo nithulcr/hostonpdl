@@ -124,7 +124,7 @@ export default function Features() {
 
 
     return (
-        <section id="features" className="py-14 lg:py-28  relative bg-[var(--background2)]">
+        <section id="features" className="py-14 lg:py-24  relative bg-[var(--background2)]">
             <div className="max-w-[1400px] mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

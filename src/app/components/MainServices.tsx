@@ -108,7 +108,7 @@ const Services = () => {
     ];
 
     return (
-        <section ref={containerRef} id="services" className="bg-[var(--foreground)] text-white section overflow-hidden py-14 lg:py-28">
+        <section ref={containerRef} id="services" className="bg-[var(--foreground)] text-white section overflow-hidden py-14 lg:py-24">
             <div className="max-w-[1400px] mx-auto px-6">
                 {/* Heading */}
                 <motion.div

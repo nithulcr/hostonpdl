@@ -92,7 +92,7 @@ const Services = () => {
     useStaggeredFadeUp(fadeRef as React.RefObject<HTMLElement>);
 
     return (
-        <section ref={containerRef} id="services" className="section overflow-hidden py-14 lg:py-28">
+        <section ref={containerRef} id="services" className="section overflow-hidden py-14 lg:py-24">
             <div className="max-w-[1400px] mx-auto px-6">
 
 

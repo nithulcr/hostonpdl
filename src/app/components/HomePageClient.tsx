@@ -10,8 +10,6 @@ import Insights from "./Insights";
 import CaseStudy from "./CaseStudy";
 
 
-import Features from "./Features";
-import Platform from "./Platform";
 
 
 
@@ -43,12 +41,12 @@ export default function HomePageClient() {
 
 
          
-          <Features />
+      
 
 
 
           <Testimonials />
-          <Platform />
+        
 
           <Blogs />
           

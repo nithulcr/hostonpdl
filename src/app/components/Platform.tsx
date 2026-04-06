@@ -125,7 +125,7 @@ export default function Features() {
 
 
     return (
-        <section id="features" className="py-14 lg:py-28  relative bg-[var(--background2)]">
+        <section id="features" className="py-14 lg:py-24  relative ">
             <div className="max-w-[1400px] mx-auto px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -137,7 +137,7 @@ export default function Features() {
                         PLATFORM
                     </div>
                     <h2 ref={fadeRef} className="text-center fade-up-stagger text-3xl lg:text-[54px] font-medium mb-1 leading-none">
-                        Plug in & Perform
+                      All IT Services
                     </h2>
                 </motion.div>
 
@@ -150,7 +150,7 @@ export default function Features() {
                     className=" grid  lg:grid-cols-2  gap-5  relative  ">
 
 
-                    <div className="bg-[var(--background)] p-8 ">
+                    <div className="bg-[#fffdf3] p-8 ">
                         <h3 className="text-xl font-semibold mb-4">Integrations</h3>
                         <p className="text-gray-500 mb-6">
                             Data flows seamlessly between your tools and Pixis Visibility.
@@ -237,7 +237,7 @@ export default function Features() {
                     </div>
 
                     {/* RIGHT CARD */}
-                    <div className="bg-[var(--background)]  p-8 ">
+                    <div className="bg-[#fffdf3]  p-8 ">
                         <h3 className="text-xl font-semibold mb-4">
                             Security & Compliance
                         </h3>

@@ -72,7 +72,7 @@ export default function Testimonials() {
         
 
     return (
-        <section className="rounded-3xl testimonials-section overflow-hidden relative lg:py-24 py-14 ">
+        <section className="bg-[var(--background2)] rounded-3xl testimonials-section overflow-hidden relative lg:py-24 py-14 ">
             <div className="mx-auto  max-w-[1400px] lg:pl-6  flex flex-col items-center justify-center">
                <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -147,7 +147,7 @@ export default function Testimonials() {
                         >
                             {testimonialsItems.map((item, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="bg-white rounded-2xl  p-4  lg:p-6  relative  flex flex-col h-full  ">
+                                    <div className="bg-[#fffdf3] rounded-2xl  p-4  lg:p-6  relative  flex flex-col h-full  ">
 
                                         <div className="flex items-center gap-2 mb-2">
                                             <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">

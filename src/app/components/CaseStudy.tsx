@@ -36,7 +36,7 @@ const CaseStudy = () => {
   useStaggeredFadeUp(fadeRef as unknown as React.RefObject<HTMLElement>);
 
   return (
-    <section ref={containerRef} id="CaseStudy" className="section overflow-hidden py-14 lg:py-28">
+    <section ref={containerRef} id="CaseStudy" className="section overflow-hidden py-14 lg:py-24">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ const CaseStudy = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {caseStudies.map((item) => (
             <div
-              className="case-col group hover:-translate-y-[15px] overflow-hidden bg-white transition-all duration-300 relative"
+              className="case-col  group hover:-translate-y-[15px] overflow-hidden bg-white transition-all duration-300 relative"
               key={item.title}
             >
               {/* Image Only */}
