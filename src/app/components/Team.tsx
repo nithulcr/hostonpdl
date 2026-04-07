@@ -43,7 +43,7 @@ const Team = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
-          className="heading md:flex justify-between items-center text-left mb-10 md:mb-16 gap-4"
+          className="heading md:flex justify-between items-end text-left mb-10 md:mb-16 gap-4"
         >
           <div className="max-w-[500px] flex flex-col gap-2">
             <div className="flex items-center gap-2 text-site mb-2 uppercase text-md">

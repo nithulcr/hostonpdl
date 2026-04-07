@@ -146,7 +146,7 @@ export default function ContactSection() {
                 </span>
                 <div className="flex flex-col gap-1 text-center">
                   <span className="text-site text-lg">Our Location</span>
-                  <span className=" text-sm font-light">Thavakkara Complex Thavakkara Kannur - 2, Kerala 670002</span>
+                  <span className=" text-sm font-light">Second Floor Thavakkara Complex, Thavakkara, Kannur - 2, Kerala 670002, India</span>
                 </div>
               </li>
 

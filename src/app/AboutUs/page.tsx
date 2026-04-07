@@ -131,7 +131,7 @@ export default function Home() {
             <div className="relative flex justify-center  lg:flex h-full">
 
               <Image
-                src="/trusted-partners.jpg"
+                src="/real-estate.jpg"
                 alt="Business for Success"
                 width={1000}
                 height={700}
