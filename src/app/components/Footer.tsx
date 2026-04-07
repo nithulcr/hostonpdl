@@ -2,10 +2,10 @@
 // components/Footer.jsx
 import Link from 'next/link';
 import AnimatedButton from "./AnimatedButton";
-import { useState } from "react";
+
 
 export default function Footer() {
-   const [showDisclaimer, setShowDisclaimer] = useState(false);
+  
   return (
     <footer className="bg-[#121212]  text-white font-normal">
       <div className="max-w-[1400px] mx-auto pt-14 lg:pt-24  px-6">
@@ -74,36 +74,36 @@ export default function Footer() {
 
          
                
-                <li className="flex gap-4 text-[15px]">
+                <Link href="/AboutUs" className="flex gap-4 text-[15px]">
                   <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.0489 12.631L12.8614 19.0997C12.7324 19.2346 12.5574 19.3104 12.375 19.3104C12.1926 19.3104 12.0176 19.2346 11.8886 19.0997C11.7596 18.9649 11.6871 18.782 11.6871 18.5912C11.6871 18.4005 11.7596 18.2176 11.8886 18.0827L16.903 12.8412H3.4375C3.25516 12.8412 3.0803 12.7655 2.95136 12.6307C2.82243 12.4959 2.75 12.3131 2.75 12.1225C2.75 11.9318 2.82243 11.749 2.95136 11.6142C3.0803 11.4794 3.25516 11.4037 3.4375 11.4037H16.903L11.8886 6.16224C11.7596 6.02737 11.6871 5.84445 11.6871 5.65372C11.6871 5.46299 11.7596 5.28007 11.8886 5.1452C12.0176 5.01034 12.1926 4.93457 12.375 4.93457C12.5574 4.93457 12.7324 5.01034 12.8614 5.1452L19.0489 11.614C19.1128 11.6807 19.1635 11.76 19.1981 11.8472C19.2327 11.9345 19.2505 12.028 19.2505 12.1225C19.2505 12.2169 19.2327 12.3105 19.1981 12.3977C19.1635 12.485 19.1128 12.5642 19.0489 12.631Z" fill="white" />
                   </svg>
 
                   About Us
-                </li>
-                <li className="flex gap-4 text-[15px]">
+                </Link>
+                <Link href="/Projects" className="flex gap-4 text-[15px]">
                   <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.0489 12.631L12.8614 19.0997C12.7324 19.2346 12.5574 19.3104 12.375 19.3104C12.1926 19.3104 12.0176 19.2346 11.8886 19.0997C11.7596 18.9649 11.6871 18.782 11.6871 18.5912C11.6871 18.4005 11.7596 18.2176 11.8886 18.0827L16.903 12.8412H3.4375C3.25516 12.8412 3.0803 12.7655 2.95136 12.6307C2.82243 12.4959 2.75 12.3131 2.75 12.1225C2.75 11.9318 2.82243 11.749 2.95136 11.6142C3.0803 11.4794 3.25516 11.4037 3.4375 11.4037H16.903L11.8886 6.16224C11.7596 6.02737 11.6871 5.84445 11.6871 5.65372C11.6871 5.46299 11.7596 5.28007 11.8886 5.1452C12.0176 5.01034 12.1926 4.93457 12.375 4.93457C12.5574 4.93457 12.7324 5.01034 12.8614 5.1452L19.0489 11.614C19.1128 11.6807 19.1635 11.76 19.1981 11.8472C19.2327 11.9345 19.2505 12.028 19.2505 12.1225C19.2505 12.2169 19.2327 12.3105 19.1981 12.3977C19.1635 12.485 19.1128 12.5642 19.0489 12.631Z" fill="white" />
                   </svg>
-                  Project Locations
+                  Projects
 
-                </li>
-                <li className="flex gap-4 text-[15px]">
+                </Link>
+                <Link href="/Services" className="flex gap-4 text-[15px]">
                   <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.0489 12.631L12.8614 19.0997C12.7324 19.2346 12.5574 19.3104 12.375 19.3104C12.1926 19.3104 12.0176 19.2346 11.8886 19.0997C11.7596 18.9649 11.6871 18.782 11.6871 18.5912C11.6871 18.4005 11.7596 18.2176 11.8886 18.0827L16.903 12.8412H3.4375C3.25516 12.8412 3.0803 12.7655 2.95136 12.6307C2.82243 12.4959 2.75 12.3131 2.75 12.1225C2.75 11.9318 2.82243 11.749 2.95136 11.6142C3.0803 11.4794 3.25516 11.4037 3.4375 11.4037H16.903L11.8886 6.16224C11.7596 6.02737 11.6871 5.84445 11.6871 5.65372C11.6871 5.46299 11.7596 5.28007 11.8886 5.1452C12.0176 5.01034 12.1926 4.93457 12.375 4.93457C12.5574 4.93457 12.7324 5.01034 12.8614 5.1452L19.0489 11.614C19.1128 11.6807 19.1635 11.76 19.1981 11.8472C19.2327 11.9345 19.2505 12.028 19.2505 12.1225C19.2505 12.2169 19.2327 12.3105 19.1981 12.3977C19.1635 12.485 19.1128 12.5642 19.0489 12.631Z" fill="white" />
                   </svg>
 
                   Services
-                </li>
+                </Link>
                 
                 
-                <li className="flex gap-4 text-[15px]">
+                <Link href="/ContactUs" className="flex gap-4 text-[15px]">
                   <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.0489 12.631L12.8614 19.0997C12.7324 19.2346 12.5574 19.3104 12.375 19.3104C12.1926 19.3104 12.0176 19.2346 11.8886 19.0997C11.7596 18.9649 11.6871 18.782 11.6871 18.5912C11.6871 18.4005 11.7596 18.2176 11.8886 18.0827L16.903 12.8412H3.4375C3.25516 12.8412 3.0803 12.7655 2.95136 12.6307C2.82243 12.4959 2.75 12.3131 2.75 12.1225C2.75 11.9318 2.82243 11.749 2.95136 11.6142C3.0803 11.4794 3.25516 11.4037 3.4375 11.4037H16.903L11.8886 6.16224C11.7596 6.02737 11.6871 5.84445 11.6871 5.65372C11.6871 5.46299 11.7596 5.28007 11.8886 5.1452C12.0176 5.01034 12.1926 4.93457 12.375 4.93457C12.5574 4.93457 12.7324 5.01034 12.8614 5.1452L19.0489 11.614C19.1128 11.6807 19.1635 11.76 19.1981 11.8472C19.2327 11.9345 19.2505 12.028 19.2505 12.1225C19.2505 12.2169 19.2327 12.3105 19.1981 12.3977C19.1635 12.485 19.1128 12.5642 19.0489 12.631Z" fill="white" />
                   </svg>
                 Contact Us
 
-                </li>
+                </Link>
                
               </ul>
             </div>
@@ -148,11 +148,11 @@ export default function Footer() {
           </div>
 
           <div>
-            {/* <h2 className="text-xl  font-semibold flex flex-col">
+            <h2 className="text-xl  font-semibold flex flex-col md:hidden mt-4 pb-5">
               Office Inforamtion
               <span className="border-b border-dashed w-[70px] mt-3"></span>
-            </h2> */}
-            <ul className="space-y-5 mt-4">
+            </h2>
+            <ul className="space-y-5">
 
               <li className="flex gap-4 text-[15px]">
                 <span className="bg-[#f7f3d6] p-3 rounded-md  w-12 h-12 flex items-center justify-center">
@@ -206,16 +206,16 @@ export default function Footer() {
 
 
       </div>
-      <div className='max-w-[1400px] mx-auto px-4 md:px-6 pb-14 pt-6'>
+      <div className='max-w-[1400px] mx-auto px-4 md:px-6 pb-14 pt-12 lg:pt-6'>
         <div className="text-sm text-gray-400">
           <button
-            onClick={() => setShowDisclaimer(!showDisclaimer)}
-            className="text-site text-[16px] underline mb-2 cursor-pointer"
+           
+            className="text-site text-[16px] underline mb-2 "
           >
-            {showDisclaimer ? "Hide Disclaimer" : "Read Disclaimer"}
+           Disclaimer
           </button>
 
-          {showDisclaimer && (
+    
             <div className="mt-3 space-y-3 leading-relaxed text-justify font-light2">
               <p>
                 HOST ON PDL strives to present accurate and up-to-date information on this website.
@@ -243,7 +243,7 @@ export default function Footer() {
                 By using this website, you acknowledge and agree to the terms of this disclaimer.
               </p>
             </div>
-          )}
+      
         </div>
       </div>
       <div className='max-w-[1400px] mx-auto px-4 md:px-6'>
