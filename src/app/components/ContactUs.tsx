@@ -175,7 +175,7 @@ export default function ContactSection() {
 
                 </span>
                 <div className="flex flex-col gap-1 text-center">
-                  <span className="text-site text-lg">Call Us 24/7</span>
+                  <span className="text-site text-lg">Call Us</span>
                   <span className=" text-sm font-light">Dubai : +971 54 219 2773</span>
                   <span className=" text-sm font-light">Kerala : +91 9846 272 623</span>
 

@@ -1,3 +1,4 @@
+"use client"
 // components/Footer.jsx
 import Link from 'next/link';
 import AnimatedButton from "./AnimatedButton";
@@ -161,7 +162,7 @@ export default function Footer() {
 
                 </span>
                 <div className="flex flex-col gap-1">
-                  <span className="opacity-60 text-[14px]">Call Us 24/7</span>
+                  <span className="opacity-60 text-[14px]">Call Us</span>
                   <span className="">+971 54 219 2773</span>
                   <span className="">+91 9846 272 623</span>
 
