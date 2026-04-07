@@ -188,7 +188,7 @@ export default function Header() {
                         <div className="flex items-center gap-3 md:gap-5">
 
                             <div className="">
-                                <AnimatedButton href="https://wa.me/123456789" label="Enquire Now" className=" w-fit " />
+                                <AnimatedButton href="https://wa.me/+919846272623" label="Enquire Now" className=" w-fit " />
                             </div>
                         </div>
                         <button
